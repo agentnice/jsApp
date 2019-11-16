@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>NewsApp</title>
+  </head>
+  <body>
+    <nav class="blue lighten-2">
+      <div class="nav-wrapper"><a class="brand-logo" href="#">News App</a></div>
+    </nav>
+    <div class="search-controls">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <form name="newsControls">
+                <div class="card-content"><span class="card-title">Search news</span>
+                  <div class="input-field">
+                    <select name="country" id="country">
+                      <option value="ua">Ukraine</option>
+                      <option value="us">United States</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <input class="autocomplete" type="text" id="autocomplete-input" name="search"/>
+                    <label for="autocomplete-input">search</label>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Search<i class="material-icons right">search</i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news-container">
+      <div class="container">
+        <div class="row grid-container"></div>
+      </div>
+    </div><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
